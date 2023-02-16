@@ -5,13 +5,13 @@ pipeline {
       steps{
         sh 'g++ main/hello.cpp -o output'
         build 'PES2UG20CS271-1'
-        echo 'Build Stage Successful'
+        echo 'Build  Successful'
       }
     }
     stage('Test'){
       steps{
          sh './output'
-        echo 'Test Stage Successful' 
+        echo 'Test Successful' 
        
       }
     }
